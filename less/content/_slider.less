@@ -1,0 +1,57 @@
+.feedback {
+    text-align: center;
+    padding-bottom: 95px;
+    .headline{
+        padding: 57px 0;
+        font-size: 36px;
+        line-height: 30px;
+        color: @text-black;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-transform: capitalize;
+    }
+    img {
+        margin: auto;
+        clip-path: circle(34%);
+        -webkit-clip-path: circle(34%);      
+    }
+    .fb-content {
+        margin: auto;
+        padding: 15px 0 8px 0 ;
+        max-width: 771px;
+        font-size: 18px;
+        line-height: 30px;
+        color: @text-grey;
+        font-weight: 400;
+        font-family: "Poppins";
+    }
+    .fb-user {
+        padding: 19px 0;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 700;
+        color: @text-black;
+        text-transform: uppercase;
+        .fb-status {
+            font-size: 14px;
+            font-weight: 400;
+            color: @text-grey;
+            text-transform: none;
+        }
+    }
+    .slider {
+        .slick-dots {
+                .slick-active{
+                    button::before {
+                        color:#dd2f31;
+                    }
+                }
+                li {
+                    button::before {
+                        font-size: 12px;
+                    }
+                }
+        }
+    }
+    
+}
