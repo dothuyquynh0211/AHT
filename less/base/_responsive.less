@@ -1,65 +1,61 @@
 @media all and (max-width: 1170px) {
     .header {
         padding: 10px 0;
-        &-inner {
-            .logo {
-                 order: 2;
-            }
+        .logo {
+                order: 2;
+        }
            
-            .menu-bar {
-                order: 1;
-                nav {
-                    .nav-icon {
-                        display: block;                        
-                        span {
-                            padding: 0 20px;
-                            text-transform: uppercase;
-                        }
-                    }
-                    
-                    .navbar {
-                        .nav-title {
-                            display: block;
-                            border-bottom: 1px solid @footer-color;
-                        }
-                         .transformer(translateX(-110%));
-                         transition: .5s;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        z-index: 999;
-                        background-color: @footer-bottom-color;
-                        width: 25vw;
-                        height: 100vh;
-                        -webkit-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.37); 
-                        box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.37);
-                       
-                        
-                        .navbar-item {
-                            display: block;
-                            margin: 0;
-                            padding: 15px 20px;
-                            border-bottom: 1px solid @footer-color;
-                            a {
-                                color: @text-grey;
-                                &:hover {
-                                    color: @text-white;
-                                }
-                            }
-
-                        }
-                        
-                    }
-                    .active{
-                        .transformer(translateX(0));
-                    }
+        .menu-bar {
+            order: 1;
+            .nav-icon {
+                display: block;                        
+                span {
+                    padding: 0 20px;
+                    text-transform: uppercase;
                 }
             }
-            .nav-item {
-                order: 3;
-                padding: 0 15px;
+            
+            .navbar {
+                .nav-title {
+                    display: block;
+                    border-bottom: 1px solid @footer-color;
+                }
+                .transformer(translateX(-110%));
+                transition: .5s;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                background-color: @footer-bottom-color;
+                width: 25vw;
+                height: 100vh;
+                -webkit-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.37); 
+                box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.37);               
+                .navbar-item {
+                    display: block;
+                    margin: 0;
+                    padding: 15px 20px;
+                    border-bottom: 1px solid @footer-color;
+                    a {
+                        color: @text-grey;
+                        &:hover {
+                            color: @text-white;
+                        }
+                    }
+
+                }
+                    
             }
+            .active{
+                .transformer(translateX(0));
+            }
+            
         }
+        .nav-item {
+            order: 3;
+            padding: 0 15px;
+        }
+    
     }
     
     .banner-top {
@@ -68,9 +64,11 @@
             &-inner {
                 .banner-title1 {
                     font-size: 45px;
+                    .transformer(none);
                 }
                 .banner-title2 {
                     font-size: 25px;
+                    .transformer(none);
                 }
                 .banner-text {
                     font-size: 15px;
@@ -85,10 +83,8 @@
     }
     .banner-sub {
         .banner-item {
-            .banner-inner {
-                .banner-detail {
-                    padding: 15px 0;
-                }
+            .banner-detail {
+                padding: 15px 0;
             }
         }
     }
@@ -102,13 +98,13 @@
 @media all and (max-width: 1024px) {
     .banner-top {
         &-content {
-            top: 20%;
             &-inner {
                 .banner-title1 {
                     font-size: 40px;
                 }
                 .banner-text {
-                    font-size: 9px;
+                    font-size: 13px;
+                    margin-top: 5px;
                 }
                 .banner-btn {
                     font-size: 10px;
@@ -128,6 +124,9 @@
             margin: 0;
             padding: 0;
         }
+        #ic {
+            padding-top: 0;
+        }
     }
     .top-saler {
         .title{
@@ -135,7 +134,7 @@
         }
         .product {
             li {
-                width: 33%;
+                width: 33.3333%;
             }
             &-items {
                 .product-top {
@@ -160,11 +159,10 @@
     }
     .footer {
         &-list {
-            .row {
-                .list-item {
-                    width: 50%;
-                }
+            .list-item {
+                width: 50%;
             }
+
         }
     }
 }
@@ -172,25 +170,21 @@
     .header {
         padding: 5px 0;
         font-size: 14px;
-        &-inner {
-            .logo {
-                img {
-                    height: 40px;
-                }
-            }
+        img {
+            height: 40px;
         }
         .menu-bar {
-            nav {
-                .navbar {
-                    .nav-title {
-                        padding: 16px 0;
-                    }
-                    .navbar-item {
-                        line-height: normal;
-                        padding: 8px 20px ;
-                    }
+
+            .navbar {
+                .nav-title {
+                    padding: 16px 0;
+                }
+                .navbar-item {
+                    line-height: normal;
+                    padding: 8px 20px ;
                 }
             }
+
         }
     }
     .banner-top {
@@ -214,17 +208,17 @@
     }
     .banner-sub {
         .banner-item {
-            .banner-inner {
-                .banner-detail {
-                    &-title {
-                        font-size: 14px;
-                        padding: 0;
-                    }
-                    &-text {
-                        font-size: 12px;
-                    }
+
+            .banner-detail {
+                &-title {
+                    font-size: 14px;
+                    padding: 0;
+                }
+                &-text {
+                    font-size: 12px;
                 }
             }
+
         }
     }
     .feedback {
@@ -235,16 +229,13 @@
     }
     .top-saler {
         .title {
-            &-item {
-                a {
-                    font-size: 14px;
-                }
+            a {
+                font-size: 14px;
             }
+
         }
         .product {
-            li {
-                width: 50%;
-            }
+            
             &-items {
                 .product-top {
                     img {
@@ -253,6 +244,9 @@
                     }
                 }
             }
+            li {
+                width: 50%;
+            }
         }
     }
     
@@ -260,27 +254,24 @@
 @media all and (max-width: 578px) {
     .header {
         font-size: 10px;
-        &-inner {
-            .logo {
-                img {
-                    height: 20px;
-                }
-            }
-            .nav-item {
-                padding: 0 9px;
-            }
+
+        img {
+            height: 20px;
         }
+        
+        .nav-item {
+            padding: 0 9px;
+        }
+        
         .menu-bar {
-            nav {
-                .nav-icon {
-                    span {
-                        padding: 0 10px;
-                    }
+            .nav-icon {
+                span {
+                    padding: 0 10px;
                 }
-                .navbar {
-                    .nav-title {
-                        padding: 10px 0;
-                    }
+            }
+            .navbar {
+                .nav-title {
+                    padding: 10px 0;
                 }
             }
         }
@@ -291,42 +282,40 @@
             &-inner {
                 width: 70%;
                 .banner-title1 {
-                    font-size: 20px;
+                    font-size: 25px;
                 }
                 .banner-title2 {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
                 .banner-text {
-                    font-size: 6px;
+                    font-size: 12px;
                 }
                 .banner-btn {
-                    font-size: 6px;
+                    font-size: 12px;
                     line-height: normal;
                     padding: 5px 10px;
                 }
+            }
+        }
+        &-item {
+            img {
+                width: auto;
+                height: 300px;
+                
             }
         }
 
     }
     .banner-sub {
         .banner-item {
-            .banner-inner {
-                .banner-detail {
-                    padding: 10px 0;
-                    &-icon {
-                        height: auto;
-                        img {
-                            height: 30px;
-                        }
-                    }
-                    &-title {
-                        font-size: 10px;
-                    }
-                    &-text {
-                        font-size: 8px;
-                        padding: 0 10px;
-                        line-height: normal;
-                    }
+            .banner-detail {
+                padding: 5px 0;
+                img {
+                    height: 30px;
+                }
+                &-text {
+                    font-size: 10px;
+                    line-height: normal;
                 }
             }
         }
@@ -334,11 +323,10 @@
     .top-saler {
         .title {
             margin-top: 15px;
-            &-item {
-                a {
-                    font-size: 12px;
-                }
+            a {
+                font-size: 12px;
             }
+
         }
         .product {
             li {
@@ -352,7 +340,7 @@
             padding: 45px 0;
         }
         .fb-content {
-            font-size: 10px;
+            font-size: 12px;
         }
         .fb-user {
             padding: 0;
@@ -361,14 +349,13 @@
             font-size: 8px;
             }
         }        
-        .slider {
-            .slick-dots {                    
-                    li {
-                        button::before {
-                            font-size: 5px;
-                        }
-                    }
+        .slider {                  
+            li {
+                button::before {
+                    font-size: 5px;
+                }
             }
+
         }
     }
     .brand {
@@ -377,27 +364,24 @@
         }
     }
     .footer {
-        &-top {
-            .footer-info {
-                line-height: normal;
-                font-size: 10px;
-            }
+        .footer-info {
+            line-height: normal;
+            font-size: 12px;
         }
         &-list {
-            .row {
-                .list-item {
-                    h3 {
+            .list-item {
+                h3 {
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+                ul {
+                    li {
+                        font-size: 11px;
                         line-height: 20px;
-                        font-size: 12px;
-                    }
-                    ul {
-                        li {
-                            font-size: 10px;
-                            line-height: 20px;
-                        }
                     }
                 }
             }
+
         }
         &-bottom {
             height: auto;

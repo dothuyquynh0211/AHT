@@ -41,17 +41,24 @@
     }
     .slider {
         .slick-dots {
-                .slick-active{
-                    button::before {
-                        color:#dd2f31;
-                    }
-                }
-                li {
-                    button::before {
-                        font-size: 12px;
-                    }
-                }
+            bottom: -33px;                
+        }
+        .slick-active{
+            button::before {
+                color:#dd2f31;
+            }
+        }
+        li {
+            margin: 0;
+            button::before {
+                font-size: 12px;
+            }
         }
     }
+    .slick-next {
+        left: 0;
+        right: 0;
+    }
+    
     
 }
